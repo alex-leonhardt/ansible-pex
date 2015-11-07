@@ -1,0 +1,9 @@
+---
+- name: Local testing
+  gather_facts: false
+  hosts: localhost
+  sudo: yes
+
+  tasks:
+    - debug: msg="hello world"
+

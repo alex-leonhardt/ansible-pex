@@ -1,0 +1,11 @@
+Build PEX:
+ cd /vagrant;  pex --disable-cache --python-shebang='/usr/bin/env python' plays -e plays -o plays.pex
+
+Run ansible via PEX:
+ ./test.pex -h
+
+Run ansible via PEX:
+ ./test.pex -p test.yml
+
+Run ansible via PEX (debug):
+ ./test.pex -p test.yml --debug

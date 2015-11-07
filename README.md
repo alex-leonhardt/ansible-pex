@@ -2,7 +2,7 @@
 
 Run ansible inside a pex that includes all playbooks, the inventory file and even custom modules.
 
-## why ?
+## but.. why.. ??
 
 Several reasons, but primarily, in a "cloudy" world, we should not be dependent on a master that "is out of date" with
 the inventory (hosts, etc.) as they come and go. One way to do that is to run playbooks locally against a host, which
@@ -31,7 +31,7 @@ cd /vagrant
 and create the pex
 
 ```
-pex --disable-cache --python-shebang='/usr/bin/env python' plays -e plays -o plays.pex
+pex --disable-cache --python-shebang='/usr/bin/env python' plays -e plays -o distribution/builds/plays.pex
 ```
 
 ## run a playbook
