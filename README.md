@@ -55,3 +55,7 @@ currently the following options have been implemented
 | --noop         | do not actually execute            |
 | --diff         | show diff, best to run with --noop |
 | --playbook, -p | the playbook file name             |
+
+## credits
+
+Most of the bits of running a playbook programatically are from [http://oriolrius.cat/blog/2015/01/21/using-ansible-like-library-programming-in-python/](http://oriolrius.cat/blog/2015/01/21/using-ansible-like-library-programming-in-python/)
