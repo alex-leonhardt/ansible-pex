@@ -17,6 +17,11 @@ Some benefits
 ## pre-requisites
 
 - vagrant or docker (a host that's linux w/ python-dev(el) and general build-utils installed)
+- python 2.6.9 (recommended: python 2.7.x)
+
+## python 3
+
+not tested on / with python 3 but I cannot see anything that should prevent this from working
 
 ## create the pex
 
