@@ -34,6 +34,12 @@ and create the pex
 pex --disable-cache --python-shebang='/usr/bin/env python' plays -e plays -o distribution/builds/plays.pex
 ```
 
+make it work for python 2.6.9 
+
+```
+pex --disable-cache --python-shebang='/usr/bin/env python' plays -e plays.__main__ -o distribution/builds/plays.pex
+```
+
 ## run a playbook
 
 copy ```plays.pex``` to a host you'd like to *config* manage, and run 
