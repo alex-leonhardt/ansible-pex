@@ -51,7 +51,11 @@ def main(argv):
 
     mypath = os.path.abspath(os.path.dirname(__file__))
     module_path = mypath + '/modules'
-
+    
+    # some environment vars so we find where to log and where the callback_plugins live
+    os.environ['ANSIBLE_LOG_PATH'] = '/tmp/ansible.log'
+    os.environ['ANSIBLE_CALLBACK_PLUGINS'] = mypath + '/callback_plugins'
+    
     try:
         output = run_the_book(
             playbook=mypath + '/' + argv.playbook,
