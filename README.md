@@ -19,6 +19,10 @@ Some benefits
 - vagrant or docker (a host that's linux w/ python-dev(el) and general build-utils installed)
 - python 2.6.9 (recommended: python 2.7.x)
 
+## ansible 2
+
+currently **does not work** as is
+
 ## python 3
 
 not tested on / with python 3 but I cannot see anything that should prevent this from working
