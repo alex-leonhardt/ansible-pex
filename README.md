@@ -21,7 +21,7 @@ Some benefits
 
 ## ansible 2
 
-currently **does not work** as is
+currently **does not work** as is with anisble 2.x
 
 ## python 3
 
