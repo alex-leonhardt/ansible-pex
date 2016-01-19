@@ -65,8 +65,16 @@ def main(argv):
             noop=argv.noop,
             debug=argv.debug
         )
+        
         print json.dumps(output, sort_keys=True, indent=4, separators=(',', ': '))
-        return(0)
+
+        exit_code = 0
+
+        if output['localhost']['failures'] > 0 or \
+                output['localhost']['unreachable'] > 0:
+            exit_code = 1
+
+        return exit_code
 
     except Exception as e:
         print 'Error: something went wrong'
