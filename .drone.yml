@@ -2,4 +2,3 @@ build:
   image: centos:latest
   commands:
     - echo "hello world"
-    
